@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+//interface
+import { TaskList } from '../../model/task-list';
 
 @Component({
   selector: 'app-to-do-list',
@@ -7,6 +9,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ToDoListComponent implements OnInit {
 
+  public taskList: Array<TaskList> = [
+    
+  ];
   constructor() { }
 
   ngOnInit(): void {
